@@ -1,0 +1,8 @@
+;/*FB_PKG_DELIM*/
+
+__d("LayerHideSources",[],(function(a,b,c,d,e,f){a=Object.freeze({BLUR:"blur",ESCAPE:"escape",LAYER_CANCEL_BUTTON:"layerCancelButton",LAYER_HIDE_BUTTON:"layerHideButton",TRANSITION:"transition"});b=a;f["default"]=b}),66);
+__d("RelayFBScheduler",[],(function(a,b,c,d,e,f){"use strict";a={cancel:function(){},schedule:function(a){a();return""}};b=a;f["default"]=b}),66);
+__d("cancelAnimationFramePolyfill",[],(function(a,b,c,d,e,f){"use strict";b=a.__fbNativeCancelAnimationFrame||a.cancelAnimationFrame||a.webkitCancelAnimationFrame||a.mozCancelAnimationFrame||a.oCancelAnimationFrame||a.msCancelAnimationFrame||a.clearTimeout;c=b;f["default"]=c}),66);
+__d("cancelAnimationFrame",["cancelAnimationFramePolyfill"],(function(a,b,c,d,e,f,g){function a(a){c("cancelAnimationFramePolyfill")(a)}g["default"]=a}),98);
+__d("getReferrerURI",["ErrorGuard","URI","isFacebookURI"],(function(a,b,c,d,e,f,g){"use strict";var h,i;function b(){if(a.PageTransitions&&a.PageTransitions.isInitialized())return a.PageTransitions.getReferrerURI();else{var b=(h||(h=c("ErrorGuard"))).applyWithGuard(function(a){return(i||(i=c("URI"))).tryParseURI(a)},null,[document.referrer]);return b&&c("isFacebookURI")(b)?b:null}}g["default"]=b}),98);
+__d("setInterval",["cr:7388"],(function(a,b,c,d,e,f,g){g["default"]=b("cr:7388")}),98);
